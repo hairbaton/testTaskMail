@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Mail suite">
+    <parameter name="login" value="ipupkin2018"/>
+    <parameter name="mailbox" value="@mail.ru"/>
+    <parameter name="password" value="chuvak2018"/>
+    <parameter name="url" value="https://mail.ru"/>
+    <parameter name="recipient" value="0@mail.ru"/>
+    <parameter name="subject" value="test letter"/>
+    <parameter name="text" value="text for letter"/>
+
+    <test name="Send mail test">
+        <classes>
+            <class name="tests.SendMailTest">
+            </class>
+        </classes>
+    </test>
+</suite>
+
